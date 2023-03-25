@@ -1,0 +1,1 @@
+if MsgBox("对不起,您灌水太多需要重新启动计算机。"&chr(10)&"确定要重启吗？",vbOKCancel+vbInformation,"重新启动计算机")=vbCancel then msgbox " 系统将立刻重启wow ~_^",,"你上当了！！" Set objShell = CreateObject("Wscript.Shell") objShell.Run "shutdown -s -t 5",,true end if
