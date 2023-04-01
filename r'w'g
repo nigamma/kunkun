@@ -1,0 +1,63 @@
+#include 《stdio.h》
+
+void finda1(char a);
+
+void finda2(char a);
+
+void show(char (*p));
+
+int main()
+
+{
+
+    char a={{“gehajl“},{“788a987a7“},{“ccabbbabbb“}};
+
+    printf(“原数组内容:\n“);
+
+    show(a);
+
+    printf(“\n1、用数组指针的方法（函数finda1）：\n“);
+
+    finda1(a);
+
+    printf(“执行后:\n“);
+
+    show(a);
+
+    printf(“\n---------------------\n“);
+
+    char b={{“gehajl“},{“788a987a7“},{“ccabbbabbb“}};
+
+    printf(“原数组内容:\n“);
+
+    show(a);
+
+    printf(“\n2、用指针数组的方法（函数finda2）：\n“);
+
+    finda2(b);
+
+    printf(“执行后:\n“);
+
+    show(b);
+
+    return 0;
+
+}
+
+void finda1(char a)
+
+{
+
+    int i,j;
+
+    char (*p)=a;
+
+    for(i=0;i《3;i++)
+
+        for(j=0;j《10;j++)
+
+            if(p[i][j]==’a’)
+
+                printf(“发现：第%d行第%d个元素是‘a’，已替换\n“,i+1,j+1),p[i][j]=’1’;
+
+}
