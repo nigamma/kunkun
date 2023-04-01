@@ -1,0 +1,62 @@
+oid finda2(char a)
+
+{
+
+    int i,j;
+
+    char *p={&a,&a,&a};
+
+    for(i=0;i《3;i++)
+
+        for(j=0;j《10;j++)
+
+            if(p[i][j]==’a’)
+
+                printf(“发现：第%d行第%d个元素是‘a’，已替换\n“,i+1,j+1),p[i][j]=’1’;
+
+}
+
+void show(char (*p))
+
+{
+
+    int i,j;
+
+    for(i=0;i《3;i++,printf(“\n“))
+
+        for(j=0;j《10;j++)
+
+            printf(“%c “,p[i][j]);
+
+}
+
+
+可以复制的代码
+
+
+这个在回答问题是可以设置，如下图的部分就是设置的
+
+下面是效果：
+
+sudo apt-get install mysql-server
+
+命令代码大全
+
+
+命令代码如下：
+
+1、shutdown.exe -a　取消关机；
+
+2、shutdown.exe -s 关机；
+
+3、shutdown.exe -f　强行关闭应用程序；
+
+4、shutdown.exe -m \\计算机名　控制远程计算机；
+
+5、shutdown.exe -i　显示图形用户界面，但必须是Shutdown的第一个参数；
+
+6、shutdown.exe -l　注销当前用户；
+
+7、shutdown -r　关机并重启；
+
+8、shutdown.exe -t 设置关机倒计时，设置关闭前的超时为 xxx 秒。
